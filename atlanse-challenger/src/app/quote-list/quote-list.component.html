@@ -1,0 +1,20 @@
+<div class="d-flex justify-content-center mt-5">
+  <input class="form-control me-2" id="searchFromList" type="search" placeholder="Search" aria-label="Search">
+  <button class="btn btn-outline-primary" type="submit">Search</button>
+</div>
+
+<table class="table mt-5">
+  <thead>
+  <tr>
+    <th scope="col">Quote</th>
+    <th scope="col">Date Created</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr *ngFor="let quote of quoteList">
+    <th scope="row">{{quote.quote}}</th>
+    <th scope="row">{{quote.date}}</th>
+  </tr>
+  </tbody>
+</table>
+
