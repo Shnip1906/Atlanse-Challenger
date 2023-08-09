@@ -1,9 +1,13 @@
 <div class="d-flex justify-content-center mt-5">
   <input class="form-control me-2" id="searchFromList" type="search" placeholder="Search" aria-label="Search">
-  <button class="btn btn-outline-primary" type="submit">Search</button>
+  <button class="btn btn-outline-primary" (click)="searchFromList()">Search</button>
 </div>
 
-<table class="table mt-5">
+<div class="mt-4">
+  <button class="btn btn-success">Save</button>
+</div>
+
+<table class="table mt-4">
   <thead>
   <tr>
     <th scope="col">Quote</th>
