@@ -19,19 +19,7 @@ export class HomeComponent implements  OnInit{
   }
 
   ngOnInit() {
-    this.getQuoteFromChuck()
-    this.latestSearch = this.HomeService.getLastDate()
-  }
-
-  getQuoteFromChuck(){
-    this.HomeService.getQuotes().subscribe(
-      (response) => {
-        this.quote = response.value;
-      },
-      (error) => {
-        console.error('Error fetching data:', error);
-      }
-    );
+    this.latestSearch = this.HomeService.getLastDate()    // DATE
   }
 
   getQuoteSearchFromChuck(){

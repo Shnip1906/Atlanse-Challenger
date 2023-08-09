@@ -1,10 +1,15 @@
+<div class="text-center">
+  <h1 class="mt-5">Quote List</h1>
+</div>
+
 <div class="d-flex justify-content-center mt-5">
   <input class="form-control me-2" id="searchFromList" type="search" placeholder="Search" aria-label="Search">
   <button class="btn btn-outline-primary" (click)="searchFromList()">Search</button>
 </div>
 
 <div class="mt-4">
-  <button class="btn btn-success">Save</button>
+  <button class="btn btn-success" (click)="persistQuote()">Save List</button>
+  <button class="btn btn-danger float-end" (click)="clearQuote()">Clear List</button>
 </div>
 
 <table class="table mt-4">

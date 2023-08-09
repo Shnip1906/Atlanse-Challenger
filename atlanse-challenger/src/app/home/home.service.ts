@@ -9,7 +9,6 @@ export class HomeService {
   private baseURL = 'https://api.chucknorris.io/jokes';
   private dateLastSearch: string = "";
 
-
   constructor(private httpClient: HttpClient,) {}
 
   getQuotes():Observable<any>{
